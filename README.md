@@ -31,7 +31,7 @@ integrate it into your software.
 For now:
 
 ```
-npm install -g vsce
+npm install -g @vscode/vsce
 vsce package
 code --install-extension *.vsix
 ```
