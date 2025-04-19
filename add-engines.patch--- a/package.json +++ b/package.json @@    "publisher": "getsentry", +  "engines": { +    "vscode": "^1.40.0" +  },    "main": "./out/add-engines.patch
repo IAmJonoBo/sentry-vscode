@@ -1,8 +1,0 @@
---- a/package.json
-+++ b/package.json
-@@
-   "publisher": "getsentry",
-+  "engines": {
-+    "vscode": "^1.40.0"
-+  },
-   "main": "./out/extension.js",
