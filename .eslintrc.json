@@ -1,5 +1,26 @@
 {
-  "extends": ["standard"],
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module",
+    "project": "./tsconfig.json"
+  },
+  "plugins": [
+    "@typescript-eslint"
+  ],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "standard"
+  ],
+  "env": {
+    "node": true,
+    "es6": true
+  },
   "rules": {
+    // Custom rule overrides can go here. For example:
+    // "@typescript-eslint/explicit-module-boundary-types": "off",
+    // "no-console": "warn"
   }
 }
