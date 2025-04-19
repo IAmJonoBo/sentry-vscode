@@ -1,11 +1,14 @@
 {
-  "extends": "./node_modules/@sentry/typescript/tsconfig.json",
+  "extends": "./node_modules/@sentry/typescript/tsconfig.json", // Ensure 'noImplicitUseStrict' is not in the extended config
   "compilerOptions": {
-    "declaration": false,
     "target": "es6",
+    "declaration": true,
+    "declarationMap": true,
+    "composite": true,
     "outDir": "out",
     "lib": ["es6"],
-    "rootDir": "src"
+    "rootDir": "src",
+    "noImplicitUseStrict": false
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules", ".vscode-test"]
